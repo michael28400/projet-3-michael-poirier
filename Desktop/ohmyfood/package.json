@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michael28400/projet3mica.git"
+    "url": "git+https://github.com/michael28400/projet-3-michael-poirier.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/michael28400/projet3mica/issues"
+    "url": "https://github.com/michael28400/projet-3-michael-poirier.git/issues"
   },
-  "homepage": "https://github.com/michael28400/projet3mica#readme",
+  "homepage": "https://github.com/michael28400/projet-3-michael-poirier.git#readme",
   "dependencies": {
     "sass": "^1.43.2"
   }

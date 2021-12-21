@@ -36,23 +36,6 @@
     width: 100%;
   }
 }
-@keyframes opacity_body {
-  0% {
-    opacity: 20%;
-  }
-  30% {
-    opacity: 30%;
-  }
-  50% {
-    opacity: 40%;
-  }
-  75% {
-    opacity: 80%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
 @keyframes opacity {
   0% {
     transform: scale(1);
@@ -451,6 +434,7 @@ h3 {
 
   .liste_footer {
     text-align: center;
+    background-color: red;
   }
 }
 

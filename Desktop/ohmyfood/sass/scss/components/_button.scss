@@ -1,0 +1,20 @@
+/* bouton*/
+@import "_variables";
+.btn_exploration{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 12em;
+    height: 2.5em;
+    border-radius: 20px;
+    background: linear-gradient($secondColor,$primaryColor);
+    margin-top: 2em;
+    
+    a{
+       font-size: 0.9em;
+       color: white;
+       text-decoration: none; 
+       top: 25%;
+       position: relative;
+    }
+}

@@ -1,0 +1,395 @@
+@charset "UTF-8";
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes animation_page {
+  0% {
+    transform: translateY(10vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes slide2 {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes opacity {
+  0% {
+    transform: scale(1);
+    opacity: 20%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 100%;
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Partie header*/
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0.5rem 0 0;
+}
+
+h2::after {
+  content: "";
+  z-index: 15;
+  position: absolute;
+  background: #99E2D0;
+  width: 45px;
+  height: 3px;
+  left: 18px;
+  margin-top: 30px;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+.return .fa-arrow-left {
+  cursor: pointer;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5%;
+  color: black;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+}
+#logo img {
+  width: 10rem;
+}
+
+.picture img {
+  position: relative;
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/*Partie menu*/
+main {
+  position: relative;
+  padding-left: 1rem;
+  background-color: whitesmoke;
+  border-radius: 50px 50px 0 0;
+  margin-top: -100px;
+  padding-bottom: 2rem;
+}
+main h1 {
+  margin-left: 1rem;
+}
+
+#menu {
+  display: flex;
+}
+#menu .titre_resto {
+  width: 80%;
+}
+#menu .heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  font-size: 1.3rem;
+}
+#menu .fa-heart:hover {
+  color: black;
+  cursor: pointer;
+  animation: heart 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/*Partie entrances*/
+h2 #entrances {
+  animation-name: animation_page;
+  animation-duration: 2000ms;
+  animation-delay: 0s;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+}
+
+.plats {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-right: 1rem;
+  cursor: pointer;
+  height: 5rem;
+}
+
+.name_plats {
+  height: 100%;
+  width: 75%;
+}
+
+h3 {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+h4 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-top: 0.5rem;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+.price h5 {
+  margin-left: 50%;
+  margin-top: 3rem;
+}
+
+.plats:hover > .comfirmation {
+  animation-name: slide;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  overflow: hidden;
+  background-color: #99E2D0;
+  color: white;
+  border-radius: 0px 20px 20px 0;
+  left: 85%;
+}
+.plats:hover > .comfirmation .plats:hover > .price h5 {
+  animation-name: slide2;
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  z-index: 100;
+}
+.plats:hover > .comfirmation .icon {
+  animation-name: rotate;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #99E2D0;
+  background-color: white;
+}
+
+.plats:hover > .price h5 {
+  animation-name: slide2;
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  z-index: 100;
+}
+
+.plats h4 {
+  margin-top: -2.5rem;
+}
+
+/*Partie dishes*/
+#dishes {
+  animation-name: animation_page;
+  animation-duration: 2000ms;
+  animation-delay: 0.7s;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+}
+
+/*¨Partie desserts*/
+#desserts {
+  animation-name: animation_page;
+  animation-duration: 2000ms;
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+}
+
+.desserts {
+  background-color: white;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-right: 1rem;
+  cursor: pointer;
+  height: 5.1rem;
+}
+.desserts h4 {
+  margin-top: -2.5rem;
+}
+.desserts p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 90%;
+}
+
+/*Bouton commande*/
+#bouton {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_exploration {
+  display: flex;
+  justify-content: center;
+  width: 12em;
+  height: 2.5em;
+  border-radius: 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  margin-top: 2.5em;
+}
+.btn_exploration a {
+  font-size: 0.9em;
+  color: white;
+  text-decoration: none;
+  top: 25%;
+  position: relative;
+}
+
+.btn_exploration:hover {
+  filter: brightness(110%);
+}
+
+/* Pied de page*/
+#infos {
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  text-decoration: none;
+}
+#infos h3 {
+  padding-top: 1rem;
+  margin-left: 1rem;
+  color: white;
+}
+
+.liste_footer {
+  margin-left: -1rem;
+  padding-bottom: 0.5rem;
+  list-style-type: none;
+  padding-top: 1rem;
+}
+.liste_footer a {
+  color: white;
+}
+
+@media screen and (min-width: 725px) {
+  .return .fa-arrow-left {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 5px;
+    color: black;
+  }
+
+  #logo img {
+    width: 12rem;
+    padding-bottom: 1rem;
+  }
+
+  .desktop {
+    background-color: #f3ebeb;
+    padding-top: 0rem;
+  }
+
+  .picture {
+    display: flex;
+    justify-content: center;
+  }
+  .picture img {
+    position: relative;
+    width: 75%;
+    height: 25rem;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+
+  /*Partie menu*/
+  main {
+    width: 75%;
+    margin-left: 12%;
+  }
+  main #menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*Pied de page */
+  .logo_footer {
+    text-align: center;
+  }
+
+  #info h3 {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+  }
+
+  .liste_footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -95,12 +95,11 @@ main{
 
 /*Partie entrances*/
 
-h2 
 #entrances {
     animation-name: animation_page;
-    animation-duration: 2000ms;
-    animation-delay: 0s;
-    animation-timing-function:ease-in;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in;
     animation-direction: normal;
 
 } 
@@ -207,8 +206,8 @@ h2
   /*Partie dishes*/
   #dishes{
     animation-name: animation_page;
-    animation-duration: 2000ms;
-    animation-delay: 0.7s;
+    animation-duration: 1s;
+    animation-delay: 1.2s;
     animation-timing-function: ease-in;
     animation-direction: normal;
   }
@@ -216,8 +215,8 @@ h2
 /*¨Partie desserts*/
 #desserts{
     animation-name: animation_page;
-    animation-duration: 2000ms;
-    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
     animation-timing-function: ease-in;
     animation-direction: normal;
 }

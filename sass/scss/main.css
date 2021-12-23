@@ -80,7 +80,7 @@ h2::after {
   background: #99E2D0;
   width: 45px;
   height: 3px;
-  left: 15px;
+  left: 16px;
   margin-top: 23px;
 }
 
@@ -162,6 +162,7 @@ main h1 {
 
 /*Partie entrances*/
 #entrances {
+  margin-bottom: 2.5rem;
   animation-name: animation_page;
   animation-duration: 1s;
   animation-delay: 0.5s;
@@ -173,6 +174,7 @@ h2 {
   font-weight: bold;
   font-size: 1rem;
   text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
 .plats {
@@ -276,6 +278,7 @@ h4 {
 
 /*Partie dishes*/
 #dishes {
+  margin-bottom: 2.5rem;
   animation-name: animation_page;
   animation-duration: 1s;
   animation-delay: 1.2s;

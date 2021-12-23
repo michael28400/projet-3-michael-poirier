@@ -63,7 +63,7 @@ main{
 }
   #reservation{
       text-align: center;
-      height: 17em;
+      height: 18em;
       background-color: #f6f6f6
     }
 
@@ -107,7 +107,7 @@ main{
         height: 2.5em;
         border-radius: 20px;
         background: linear-gradient($primaryColor,$secondColor);
-        margin-top: 2em;
+        margin-top: 1.5em;
         
         
         a{
@@ -124,20 +124,16 @@ main{
     }
 
  /*partie fonctionnement*/
-
- .titre{
+ 
     h3{
         font-size: 25px;
          margin-left: 0.5em;
          margin-top: 2em;
-         margin-bottom: 2em;
+         margin-bottom: 1.5em;
      }
-}
 
-        h3{
-            font-size: 1.5rem;
-            margin-left: 1rem;
-        }
+
+    
 
     .cercle1, .cercle2, .cercle3{
         z-index: 100;
@@ -151,7 +147,7 @@ main{
         margin-top: 1.3rem;
         margin-left: 0.2rem;
         border-radius: 50%;     
-        background-color:#9356DC;
+        background-color: #9356DC;
         color: white;
         font-size: 75%;	
     }  
@@ -167,7 +163,7 @@ main{
  border-radius:30px;
  font-size:1.5em;
  margin: 0.5rem;
- background-color: #f7f4f4;
+ background-color: #f6f6f6;
  
     .fa-mobile-alt,.fa-list-ul{
         margin-left: 10%;
@@ -182,7 +178,9 @@ main{
  } 
  
  .btn:hover{
-        filter: brightness(110%);
+        
+       background-color: #f5edff;
+       
  }
 
 .legends{

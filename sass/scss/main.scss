@@ -14,8 +14,8 @@ h2::after{
     background:#99E2D0;
     width: 45px;
     height: 3px;
-    left: 18px;
-    margin-top: 30px;
+    left: 15px;
+    margin-top: 23px;
  }    
   
  h4{
@@ -52,13 +52,18 @@ h2::after{
 main{
     position:relative;
     padding-left: 1rem;
-    background-color: whitesmoke;
+    background-color: #f6f6f6;
     border-radius: 50px 50px 0 0;
     margin-top: -100px;
     padding-bottom: 2rem;
 
     h1{
-        margin-left: 1rem;
+        margin-top: 2rem;
+         
+        font-family: Shrikhand;
+        font-weight: bold;
+        font-size: 1.5rem;
+        font-style: italic;
     }
 
 }
@@ -104,7 +109,14 @@ main{
     animation-direction: normal;
 
 } 
+
+    h2{
+        font-weight: lighter;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
     .plats {
+    box-shadow:5px 5px 5px rgb(207, 207, 207) ;
     position:relative;
     display: flex;
     flex-wrap: wrap;
@@ -247,6 +259,7 @@ main{
 #bouton{
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
 }
 
 .btn_exploration{
@@ -284,7 +297,13 @@ main{
         margin-left: 1rem;
         color: white;
     }
+
+
  }   
+
+ .texte_footer{
+     text-decoration: none;
+ }
 
  .liste_footer{
      margin-left: -1rem;

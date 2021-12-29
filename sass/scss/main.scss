@@ -168,9 +168,8 @@ main{
   }
  
  .plats:hover > .comfirmation {
-    animation-name: slide;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
+    transition: 0.3s ease-in-out;
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,13 +184,7 @@ main{
    
     
 
-    .plats:hover > .price h5 {
-        animation-name: slide2;
-        animation-delay: 0s;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards;
-        z-index: 100;
-      }
+    
 
      .icon{
         animation-name: rotate;
@@ -210,13 +203,13 @@ main{
  }  
  
 
-.plats:hover > .price h5 {
-    animation-name: slide2;
-    animation-delay: 0s;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    z-index: 10;
-;
+.plats:hover > .price h5{  
+animation-name: slide2;
+animation-delay: 0s;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+z-index: 10;
+
   }
 
 

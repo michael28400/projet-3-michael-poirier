@@ -203,9 +203,7 @@ h2 {
 }
 
 .plats:hover > .comfirmation {
-  animation-name: slide;
-  animation-duration: 0.5s;
-  animation-delay: 0s;
+  transition: 0.3s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,14 +215,6 @@ h2 {
   color: white;
   border-radius: 0px 20px 20px 0;
   left: 85%;
-}
-
-.plats:hover > .comfirmation .plats:hover > .price h5 {
-  animation-name: slide2;
-  animation-delay: 0s;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  z-index: 100;
 }
 
 .plats:hover > .comfirmation .icon {

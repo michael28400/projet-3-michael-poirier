@@ -27,6 +27,19 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    display: block;
+    opacity: 1;
+  }
+  100% {
+    display: block;
+    opacity: 0;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -309,9 +322,11 @@ h3 {
 }
 
 #infos h3 {
-  padding-top: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   margin-left: 1rem;
   color: white;
+  font-family: Shrikhand;
 }
 
 .texte_footer {
@@ -320,9 +335,8 @@ h3 {
 
 .liste_footer {
   margin-left: -1rem;
-  padding-bottom: 0.5rem;
   list-style-type: none;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 
 .liste_footer a {

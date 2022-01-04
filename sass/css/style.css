@@ -27,6 +27,19 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    display: block;
+    opacity: 1;
+  }
+  100% {
+    display: block;
+    opacity: 0;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -68,6 +81,7 @@ body {
   -o-animation: rotate 3s linear;
   animation: rotate 3s linear;
   animation-delay: 0s;
+  z-index: 100000;
 }
 
 #logo {

@@ -28,6 +28,19 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    display: block;
+    opacity: 1;
+  }
+  100% {
+    display: block;
+    opacity: 0;
+  }
+}
 /*Partie header*/
 body {
   font-family: "Roboto", sans-serif;
@@ -61,7 +74,6 @@ h4 {
   display: flex;
   justify-content: center;
 }
-
 #logo img {
   width: 10rem;
 }
@@ -83,7 +95,6 @@ main {
   margin-top: -100px;
   padding-bottom: 2rem;
 }
-
 main h1 {
   margin-top: 2rem;
   font-family: Shrikhand;
@@ -95,11 +106,9 @@ main h1 {
 #menu {
   display: flex;
 }
-
 #menu .titre_resto {
   width: 80%;
 }
-
 #menu .heart {
   display: flex;
   justify-content: center;
@@ -107,7 +116,6 @@ main h1 {
   width: 20%;
   font-size: 1.3rem;
 }
-
 #menu .fa-heart:hover {
   color: black;
   cursor: pointer;
@@ -146,21 +154,17 @@ h2 {
   overflow: hidden;
   box-shadow: 2px 5px 8px 2px #cfcfcf;
 }
-
 .plats:hover .comfirmation {
   width: 70px;
 }
-
 .plats:hover .icon {
   transform: rotate(180deg);
   transition-duration: 500ms;
 }
-
 .plats .fa-check:before {
   display: none;
   margin-top: 6px;
 }
-
 .plats:hover .fa-check:before {
   display: initial;
 }
@@ -170,14 +174,12 @@ h2 {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
 .name_plats h3 {
   margin: 15px 0 0 15px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
 .name_plats h4 {
   margin: 0 0 15px 15px;
   white-space: nowrap;
@@ -247,11 +249,9 @@ h2 {
   cursor: pointer;
   height: 5.1rem;
 }
-
 .desserts h4 {
   margin-top: -2.5rem;
 }
-
 .desserts p {
   font-size: 1rem;
   margin-top: 0.5rem;
@@ -274,7 +274,6 @@ h2 {
   background: linear-gradient(#FF79DA, #9356DC);
   margin-top: 2.5em;
 }
-
 .btn_exploration a {
   font-size: 0.9em;
   color: white;
@@ -294,7 +293,6 @@ h2 {
   background-color: black;
   text-decoration: none;
 }
-
 #infos h3 {
   padding-top: 1rem;
   margin-left: 1rem;
@@ -311,7 +309,6 @@ h2 {
   list-style-type: none;
   padding-top: 1rem;
 }
-
 .liste_footer a {
   color: white;
 }
@@ -338,7 +335,6 @@ h2 {
     display: flex;
     justify-content: center;
   }
-
   .picture img {
     position: relative;
     width: 75%;
@@ -352,7 +348,6 @@ h2 {
     width: 75%;
     margin-left: 12%;
   }
-
   main #menu {
     display: flex;
     justify-content: center;

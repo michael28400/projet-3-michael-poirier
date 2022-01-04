@@ -17,26 +17,6 @@
     opacity: 1;
   }
 }
-@keyframes slide {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-@keyframes slide2 {
-  from {
-    margin-left: 100%;
-    width: 200%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
 @keyframes heart {
   0% {
     opacity: 0;
@@ -159,92 +139,83 @@ h2 {
 }
 
 .plats {
-  box-shadow: 5px 5px 5px #cfcfcf;
-  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  background-color: white;
-  overflow: hidden;
-  margin-bottom: 1rem;
-  padding-left: 1rem;
-  border: 1px solid white;
+  margin-top: 20px;
+  background: white;
   border-radius: 20px;
-  margin-right: 1rem;
-  cursor: pointer;
-  height: 5rem;
-}
-
-.plats .name_plats {
-  height: 100%;
-  width: 75%;
-}
-
-.plats h3 {
-  height: 50%;
-  width: 100%;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  box-shadow: 2px 5px 8px 2px #cfcfcf;
 }
 
-.plats h4 {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.plats:hover .comfirmation {
+  width: 70px;
+}
+
+.plats:hover .icon {
+  transform: rotate(180deg);
+  transition-duration: 500ms;
+}
+
+.plats .fa-check:before {
+  display: none;
+  margin-top: 6px;
+}
+
+.plats:hover .fa-check:before {
+  display: initial;
+}
+
+.name_plats {
   white-space: nowrap;
-  padding-top: 0.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.name_plats h3 {
+  margin: 15px 0 0 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.name_plats h4 {
+  margin: 0 0 15px 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .price {
-  display: flex;
-  justify-content: center;
-  width: 25%;
+  margin: 35px 18px 2px 2px;
+  flex-grow: 1;
+  margin-left: auto;
+  text-align: right;
 }
 
-.price h5 {
-  margin-left: 50%;
-  margin-top: 3rem;
-}
-
-.plats:hover > .comfirmation {
-  transition: 0.3s ease-in-out;
+.comfirmation {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  height: 100%;
-  width: 15%;
-  overflow: hidden;
-  background-color: #99E2D0;
-  color: white;
-  border-radius: 0px 20px 20px 0;
-  left: 85%;
+  margin-left: auto;
+  background-color: #99e2d0;
+  width: 0px;
+  transition-duration: 0.5s;
+  border-radius: 20px 0px 0px 0px;
+  transform: rotate(180deg);
 }
 
-.plats:hover > .comfirmation .icon {
-  animation-name: rotate;
-  animation-delay: 0s;
-  animation-duration: 1s;
+.icon {
+  height: 27px;
+  width: 27px;
+  background-color: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  justify-content: center;
   border-radius: 50%;
-  color: #99E2D0;
-  background-color: white;
 }
 
-.plats:hover > .price h5 {
-  animation-name: slide2;
-  animation-delay: 0s;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  z-index: 10;
-}
-
-.plats h4 {
-  margin-top: -2.5rem;
+.fa-check {
+  color: #99e2d0;
 }
 
 /*Partie dishes*/

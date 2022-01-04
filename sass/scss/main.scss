@@ -118,104 +118,89 @@ main{
         text-transform: uppercase;
         margin-bottom: 1.5rem;
     }
-        .plats {
-        box-shadow:5px 5px 5px rgb(207, 207, 207) ;
-        position:relative;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: white;
-        overflow: hidden;
-        margin-bottom: 1rem;
-        padding-left: 1rem;
-        border: 1px solid white;
-        border-radius: 20px;
-        margin-right: 1rem;
-        cursor: pointer;
-        height: 5rem;
-        
-            .name_plats{
-                height: 100%;
-                width: 75%;
-            }
 
-            h3{
-                height: 50%;
-                width: 100%;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-            }
-            h4{
-                width: 100%;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                padding-top: 0.5rem;
-            }
-         
- }
-    .price{
-        display: flex;
-        justify-content:center;
-        width: 25%;
- 
-
-    h5{
-      margin-left: 50%;
-        margin-top: 3rem;
+  .plats{
+    display: flex;
+    margin-top: 20px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 5px 8px 2px rgb(207, 207, 207) ;
+   
+    &:hover .comfirmation{
+        width: 70px;
     }
 
-  }
+    &:hover .icon{
+        transform: rotate(180deg);
+        transition-duration: 500ms;
+    }
+
+    .fa-check:before{
+        display: none;
+        margin-top: 6px;
+     }
  
- .plats:hover > .comfirmation {
-    transition: 0.3s ease-in-out;
-   
+     &:hover .fa-check:before{
+        display: initial;
+     }
+
+  }
+
+  .name_plats{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    h3{
+        margin: 15px 0 0 15px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    h4{
+        margin: 0 0 15px 15px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+}
+
+.price{
+    margin: 35px 18px 2px 2px;
+    flex-grow: 1;
+    margin-left: auto;
+    text-align: right;
+}
+
+.comfirmation{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    height: 100%;
-    width: 15%;
-    overflow: hidden;
-    background-color:$tertiaryColor;
-    color: white;
-    border-radius: 0px  20px 20px 0;
-    left: 85%;
-   
+    margin-left: auto;
+    background-color: #99e2d0;
+    width: 0px;
+    transition-duration: .5s;
+    border-radius:  20px 0px 0px 0px;
+    transform: rotate(180deg);
     
+}
 
-    
+.icon{
+    height: 27px;
+    width: 27px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
 
-     .icon{
-        animation-name: rotate;
-        animation-delay: 0s;
-        animation-duration: 1s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        color: $tertiaryColor;
-        background-color: white;
-        
-    }
- }  
- 
-
-.plats:hover > .price h5{  
-animation-name: slide2;
-animation-delay: 0s;
-animation-duration: 0.5s;
-animation-fill-mode: forwards;
-z-index: 10;
-
-  }
-
-
-.plats h4 {
-    margin-top: -2.5rem;
-  }
+.fa-check{
+    color: #99e2d0;
+}
 
 
 

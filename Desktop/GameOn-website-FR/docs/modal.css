@@ -648,6 +648,7 @@
                  }
                  
              }
+
              
              @keyframes modalopen {
                  from {
@@ -656,5 +657,11 @@
                  }
                  to {
                      opacity: 1;
+                 }
+             }
+
+             @media screen and (min-width: 1051px){
+                 .content{
+                   margin-left: 35%;
                  }
              }

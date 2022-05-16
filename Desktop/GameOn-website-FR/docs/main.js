@@ -1,5 +1,4 @@
 
-
 // navigation 
 const editNav = () => {
     var x = document.getElementById("myTopnav");

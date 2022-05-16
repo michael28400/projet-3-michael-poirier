@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <div class="topnav" id="myTopnav">
         <div class="header-logo">
             <img alt="logo" src="Logo.png" width="auto" height="auto" />
@@ -27,7 +26,7 @@
         </div>
     </div>
     </div>
-    <main>
+    <main id="mainclose">
         <div class="hero-section">
             <div class="hero-content">
                 <h1 class="hero-headline">
@@ -44,12 +43,12 @@
         </div>
         <button class="btn-signup modal-btn">
             je m'inscris
-          </button>
+          </button>       
         <div class="bground">
             <div class="content">
                 <span class="close" id="closeModal"></span>
-                    <div class="modal-body">    
-                        <form id="form" name="reserve" action="index.html" method="get">
+                    <div class="modal-body">  
+                        <form id="form" name="reserve" action="index.html" method="get" >
                         <div class="formData">
                             <label>Prénom</label><br>
                             <input type="text" class="text-control" id="first" name="first" minlength="2" checked/><br>
@@ -122,7 +121,7 @@
                         <div id="confirmation">
                             <span class="close" id="closeModal2"></span>
                             <label for="validate" id="validation"><p>Merci pour <br> votre inscription !</p> 
-                            <input type="button" value="fermer" name="validate_input" id="validate_input"></input>
+                            <input type="button" value="fermer" name="" id="validate_input"></input>
                             </label> 
                         </div>
                 </div>

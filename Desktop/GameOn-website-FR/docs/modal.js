@@ -14,35 +14,27 @@ const locationQuatre = document.querySelector("#location4");
 const locationCinq = document.querySelector("#location5");
 const locationSix = document.querySelector("#location6");
 const formData = document.querySelectorAll(".formData");
-const confirmation = document.querySelector("#confirmation");
+const comfirmation = document.querySelector("#confirmation");
 const modalBtn = document.querySelectorAll(".modal-btn");
+const modalCloseCroix = document.querySelector(".close");
 const modalbg = document.querySelector(".bground");
-
+const btnSignup = document.querySelector(".btn-signup");
+const closeBouton = document.querySelector("#validate_input");
 
 // variables 
 let closeModal = document.querySelector("#closeModal");
 let closeModal2 = document.querySelector("#closeModal2");
-let form = document.querySelector("#form");
+let myForm = document.querySelector("#form");
 
-// fermeture modal de confirmation en clickant sur le bouton fermer
-function ValidMessage() {
-    let validate= document.querySelector("#validate_input");
-    validate.addEventListener("click", () => {
-        confirmation.style.display = "none";
-        form.submit();
-    });
-}
+// lance modal  sur le bouton par le click
+modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 
 // permet d'ouvrir la modal background
 
 function launchModal() {
+    comfirmation.style.display = "none";
     modalbg.style.display = "block";
-}
 
-
-// permet de fermer la modal background
-function modalClose() {
-    modalbg.style.display = "none";
 }
 
  // condition pour appeller le message d'erreur si la valeur retourner est fausse.   
@@ -128,22 +120,31 @@ function checkInputs() {
     
 }
 
-// lance modal  sur le bouton par le click
-modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
+// fermeture modal form bouton croix
 
+modalCloseCroix.addEventListener("click", modalClose);
+function modalClose() {
+    modalbg.style.display = "none";
+    comfirmation.style.display = "none";
+    document.location.reload();
+}
 
-// fermeture modal form
-closeModal.addEventListener('click', function(modalClose) {
-    modalbg.style.display ="none";
-})
 
   
-// fermeture  modal confirmation 
+// fermeture  modal confirmation bouton croix
 closeModal2.addEventListener('click', function()  {
-    confirmation.style.display ="none";
+    comfirmation.style.display ="none";
 })
 
-// Vérification  DE l'envoie du formulaire, les inputs doivent renvoyer true et ouvrir la modal confirmation
+// fermeture modal de confirmation bouton fermer
+closeBouton.addEventListener("click", closeModalForm);
+function closeModalForm() {
+    comfirmation.style.display = "none";
+    modalbg.style.display = "none";
+    document.location.reload();
+}
+
+// Vérification de l'envoie du formulaire, les inputs doivent renvoyer true et ouvrir la modal confirmation
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -155,6 +156,10 @@ form.addEventListener("submit", (e) => {
         return false;
     }
 });
+
+
+
+
 
 
  
